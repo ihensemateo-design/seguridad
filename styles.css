@@ -8,6 +8,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   color: #000;
+  background-color: #f5f5f5;
 }
 
 img {
@@ -30,7 +31,7 @@ ul {
   padding: 0;
 }
 
-/* ========== HEADER ========== */
+/* --------- HEADER SECTION --------- */
 .header {
   background-color: #f2f2f2;
   min-height: 100vh;
@@ -40,9 +41,11 @@ ul {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  container-type: inline-size;
+  container-name: header;
 }
 
-.menu {
+.header__menu {
   top: 10px;
   left: 20px;
   right: 20px;
@@ -56,11 +59,23 @@ ul {
     z-index: 999;
 }
 
-.logo {
+.header__menu-logo {
   width: 50px;
+  height: 50px;
 }
 
-.menu-icono {
+.header__menu-carrito{
+    font-size: 30px;
+  color: #000;
+  cursor: pointer;
+  margin-top: 2px;
+  display: flex;
+  position: relative;
+  left: 0;
+  top: 10px;
+}
+
+.header__menu-icono {
   font-size: 35px;
   color: #000;
   cursor: pointer;
@@ -82,7 +97,7 @@ ul {
     background-color: #fff;
     display: none;
     flex-direction: column;
-  border-radius: 0 0 20px 20px;
+    border-radius: 0 0 20px 20px;
 }
 .header__nav ul {
   display: flex;
@@ -99,7 +114,31 @@ ul {
   font-weight: 500;
 }
 
-/* ========== BOTONES ========== */
+/* ----------- HEADER QUERIES ---------- */
+@container header (min-width: 600px){
+  .header__menu{
+    border-radius: 20px;
+  }
+  .header__nav{
+    display: flex;
+    position: static;
+    background-color: transparent;
+    margin: 0;
+}
+.header__nav ul {
+  flex-direction: row;
+  text-align: end;
+  gap: 10px;
+  
+}
+
+.header__open-nav-button{
+    display: none;
+}
+}
+/* ----------- HEADER END ---------- */
+
+/* ----------- BUTTONS SECTION ---------- */
 .btn-2 {
   display: inline-block;
   padding: 10px 20px;
@@ -110,33 +149,28 @@ ul {
   text-transform: uppercase;
   text-align: center;
 }
-.carrito{
-    font-size: 30px;
-  color: #000;
-  cursor: pointer;
-  margin-top: 2px;
-  display: flex;
-  position: relative;
-  left: 0;
-}
+
 
 .ver-mas{
   margin-top: 30px;
   align-self: center;
 }
 
-/* ========== SECCIÓN OFERTAS ========== */
+/* ----------- OFERTS SECTION ---------- */
 .ofert {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: column;
   gap: 20px;
   padding: 20px;
+  padding-bottom: 150px;
   margin-bottom: 150px;
-  padding-bottom: 20px;
+  margin-top: 20px;
   box-shadow: 0 0 10px #0001;
   border-radius: 5px;
+  background-color: #fff;
+  container-name: profile;
+  container-type: inline-size;
 }
 
 .ofert__pre-oferts{
@@ -146,7 +180,7 @@ ul {
   gap: 5px;
 }
 
-.pre-oferts-txt{
+.ofert__pre-oferts-txt{
   text-align: start;
   font-size: 1,5rem;
   color: #000;
@@ -158,21 +192,51 @@ ul {
 .ofert__pre-oferts p{
   font-size: 16px;
 }
-.ofert-1 {
-  flex: 1 1 calc(33.3%);
+
+.ofert__content{
+  display: flex;
+  flex-direction: column;
+}
+
+.ofert__item {
+  flex: 1 1;
   display: flex;
   align-items: center;
   background-color: #f5f5f5;
-  padding-right: 10px;
   border-radius: 5px;
+  margin-top: 20px;
 }
 
-.ofert-img {
+.ofert__item-img {
   flex: 1;
   margin-right: 15px;
 }
 
-.ofert-img img {
+.ofert__item-img img {
+  min-width: 50px;
+  min-height: 30px;
+  max-width: 50px;
+  max-height: 30px;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+  border-radius: 8px;
+  display: block;
+}
+
+.ofert__item-txt {
+  flex: 1;
+  text-align: center;
+}
+
+.ofert__item-txt h3 {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+/* ----------- OFERTS QUERIES ---------- */
+@container profile (min-width:600px){
+.ofert__item-img img {
   min-width: 250px;
   min-height: 180px;
   max-width: 250px;
@@ -183,17 +247,8 @@ ul {
   display: block;
 }
 
-.ofert-txt {
-  flex: 1;
-  text-align: center;
 }
-
-.ofert-txt h3 {
-  font-size: 25px;
-  text-transform: uppercase;
-  margin-bottom: 25px;
-}
-
+/* ----------- OFERTS END ---------- */
 /* ========== PRODUCTOS ========== */
 .products {
   text-align: center;
@@ -325,66 +380,7 @@ ul {
 }
 
 /* ========== RESPONSIVE ========== */
-@media (min-width: 980px) {
-  .menu {
-    padding: 20px;
-  }
 
-  .menu label {
-    display: none;
-  }
-
-  .header__nav {
-    position: static;
-    display: flex;
-    background: transparent;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  .header__nav a {
-    color: #000;
-  }
-
-  #menu:checked ~ .header__nav {
-    display: flex;
-  }
-
-  .header-content {
-    padding: 50px 20px;
-    flex-direction: column;
-  }
-
-  .header-img {
-    display: none;
-  }
-
-  .header-txt h1 {
-    font-size: 70px;
-  }
-
-  .ofert {
-    flex-direction: column;
-    padding: 30px;
-  }
-
-  .products {
-    padding: 30px;
-  }
-
-  .icons,
-  .blog {
-    flex-direction: column;
-    padding: 30px;
-  }
-
-  .footer {
-    flex-direction: column;
-    text-align: center;
-    padding: 30px;
-  }
-}
 
 .hero {
   height: 90vh;

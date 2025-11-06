@@ -13,12 +13,12 @@
 <body>
     <!--- HEADER --->
     <header class="header">
-        <div class="menu container">
-            <a href="#" class="logo"><img src="imagenes/logo.png" alt=""></a>
-            <a href="#" class="carrito"><i class="bi bi-cart"></i></a>
+        <div class="header__menu container">
+            <a href="#" class="header__menu-logo"><img src="imagenes/logo.png" alt="" loading="lazy"></a>
+            <a href="#" class="header__menu-carrito"><i class="bi bi-cart"></i></a>
             <input type="checkbox" id="menu"/>
-            <label for="menu">
-                <i class="bi bi-list menu-icono" alt="menu"></i>
+            <label for="menu" class="header__open-nav-button">
+                <i class="bi bi-list header__menu-icono" alt=""></i>
             </label>
             <nav class="header__nav">
                 <ul class="header__nav-list">
@@ -37,37 +37,38 @@
     <!--- OFERTAS --->
     <section class="ofert container">
         <div class="ofert__pre-oferts">
-            <h2 class="pre-oferts-txt">Ofertas<br>Destacadas</h2>
+            <h2 class="ofert__pre-oferts-txt">Ofertas<br>Destacadas</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi cupiditate hic non atque impedit vitae maiores.</p>
         </div>
-
-        <div class="ofert-1">
-            <div class="ofert-img">
-                <img src="imagenes/f1.webp" alt="">
+        <div class="ofert__content">
+            <div class="ofert__item">
+                <div class="ofert__item-img">
+                    <img src="imagenes/f1.webp" alt="" loading="lazy">
+                </div>
+                <div class="ofert__item-txt">
+                    <h3>Silene</h3>
+                    <a href="#" class="btn-2">Mas Informacion</a>
+                </div>
             </div>
-            <div class="ofert-txt">
-                <h3>Silene</h3>
-                <a href="#" class="btn-2">Mas Informacion</a>
+    
+            <div class="ofert__item">
+                <div class="ofert__item-img">
+                    <img src="imagenes/f2.webp" alt="" loading="lazy">
+                </div>
+                <div class="ofert__item-txt">
+                    <h3>Leucanthenum maximun</h3>
+                    <a href="#" class="btn-2">Mas Informacion</a>
+                </div>
             </div>
-        </div>
-
-        <div class="ofert-1">
-            <div class="ofert-img">
-                <img src="imagenes/f2.webp" alt="">
-            </div>
-            <div class="ofert-txt">
-                <h3>Leucanthenum maximun</h3>
-                <a href="#" class="btn-2">Mas Informacion</a>
-            </div>
-        </div>
-
-        <div class="ofert-1">
-            <div class="ofert-img">
-                <img src="imagenes/f3.png" alt="">
-            </div>
-            <div class="ofert-txt">
-                <h3>Producto X</h3>
-                <a href="#" class="btn-2">Mas Informacion</a>
+    
+            <div class="ofert__item">
+                <div class="ofert__item-img">
+                    <img src="imagenes/f3.png" alt="" loading="lazy">
+                </div>
+                <div class="ofert__item-txt">
+                    <h3>Producto X</h3>
+                    <a href="#" class="btn-2">Mas Informacion</a>
+                </div>
             </div>
         </div>
         <a href="#" class="btn-2 ver-mas" >Ver mas ofertas</a>
@@ -75,13 +76,13 @@
 
     <!--- PRODUCTOS --->
     <main class="prducts container" id="lista-1">
-        <div class="pre-oferts">
-            <h2 class="x-text">Productos</h2>
+        <div class="ofert__pre-oferts">
+            <h2 class="pre-oferts-txt">Productos<br>Destacados</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi cupiditate hic non atque impedit vitae maiores.</p>
         </div>
         <div class="product-content">
             <div class="product">
-                <img src="imagenes/1.png" alt="">
+                <img src="imagenes/1.png" alt="" loading="lazy">
                 <div class="product-txt">
                     <h3>Daucus Carota Purple Kisses</h3>
                     <p>X</p>
@@ -91,7 +92,7 @@
             </div>
 
             <div class="product">
-                <img src="imagenes/2.png" alt="">
+                <img src="imagenes/2.png" alt="" loading="lazy">
                 <div class="product-txt">
                     <h3>Cosmos sulphureus</h3>
                     <p>X</p>
@@ -101,7 +102,7 @@
             </div>
 
             <div class="product">
-                <img src="imagenes/3.png" alt="">
+                <img src="imagenes/3.png" alt="" loading="lazy">
                 <div class="product-txt">
                     <h3>Ammobium alatum</h3>
                     <p>X</p>
@@ -111,7 +112,7 @@
             </div>
 
             <div class="product">
-                <img src="imagenes/4.png" alt="">
+                <img src="imagenes/4.png" alt="" loading="lazy">
                 <div class="product-txt">
                     <h3>Lino azul</h3>
                     <p>X</p>
@@ -121,7 +122,7 @@
             </div>
 
             <div class="product">
-                <img src="imagenes/5.png" alt="">
+                <img src="imagenes/5.png" alt="" loading="lazy">
                 <div class="product-txt">
                     <h3>Centaurea Black ball</h3>
                     <p>X</p>
@@ -131,7 +132,7 @@
             </div>
 
             <div class="product">
-                <img src="imagenes/6.png" alt="">
+                <img src="imagenes/6.png" alt="" loading="lazy">
                 <div class="product-txt">
                     <h3>Arvejillas de olor</h3>
                     <p>X</p>
@@ -139,26 +140,26 @@
                     <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar al carrito</a>
                 </div>
             </div>
-            <a href="#" class="btn-2 ver-mas" >Ver mas ofertas</a>
+            <a href="#" class="btn-2 ver-mas" >Ver todos los Productos</a>
         </div>
     </main>
 
     <!--- x --->
     <section class="blog container">
         <div class="blog-1">
-            <img src="imagenes/b1.png" alt="">
+            <img src="imagenes/b1.png" alt="" loading="lazy">
             <h3>Blog 1</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat facilis nihil dolor, libero error minima impedit voluptatibus quod qui vel vero quos aperiam veritatis unde inventore, exercitationem quibusdam reiciendis magnam.</p>
         </div>
 
         <div class="blog-1">
-            <img src="imagenes/b2.png" alt="">
+            <img src="imagenes/b2.png" alt="" loading="lazy">
             <h3>Blog 2</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat facilis nihil dolor, libero error minima impedit voluptatibus quod qui vel vero quos aperiam veritatis unde inventore, exercitationem quibusdam reiciendis magnam.</p>
         </div>
 
         <div class="blog-1">
-            <img src="imagenes/b3.png" alt="">
+            <img src="imagenes/b3.png" alt="" loading="lazy">
             <h3>Blog 3</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat facilis nihil dolor, libero error minima impedit voluptatibus quod qui vel vero quos aperiam veritatis unde inventore, exercitationem quibusdam reiciendis magnam.</p>
         </div>
