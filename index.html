@@ -12,30 +12,30 @@
 </head>
 <body>
     <!--- HEADER --->
-    <header class="header">
+    <header class="header" id="inicio">
         <div class="header__menu container">
-            <a href="#" class="header__menu-logo"><img src="imagenes/logo.png" alt="" loading="lazy"></a>
+            <a href="#" class="header__menu-logo"><img src="imagenes/logo.png" alt="Logo de la marca" loading="lazy"></a>
             <a href="#" class="header__menu-carrito"><i class="bi bi-cart"></i></a>
             <input type="checkbox" id="menu"/>
             <label for="menu" class="header__open-nav-button">
-                <i class="bi bi-list header__menu-icono" alt=""></i>
+                <i class="bi bi-list header__menu-icono" alt="Icono del menu"></i>
             </label>
             <nav class="header__nav">
                 <ul class="header__nav-list">
-                    <li class="header__nav-item"><a href="#">Inicio</a></li>
-                    <li class="header__nav-item"><a href="#">Ofertas</a></li>
-                    <li class="header__nav-item"><a href="#">Productos</a></li>
+                    <li class="header__nav-item"><a href="#inicio">Inicio</a></li>
+                    <li class="header__nav-item"><a href="#ofertas">Ofertas</a></li>
+                    <li class="header__nav-item"><a href="#productos">Productos</a></li>
                     <li class="header__nav-item"><a href="#">Contacto</a></li>
                 </ul>
             </nav>
         </div>
-        <div class="hero">
-            <span class="corner-text">Semillas de flores olvidadas</span>
+        <div class="header__h1">
+            <h1 class="corner-text">Semillas de flores olvidadas</h1>
         </div>
     </header>
 
     <!--- OFERTAS --->
-    <section class="ofert container">
+    <section class="ofert container" id="ofertas">
         <div class="ofert__pre-oferts">
             <h2 class="ofert__pre-oferts-txt">Ofertas<br>Destacadas</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi cupiditate hic non atque impedit vitae maiores.</p>
@@ -43,7 +43,7 @@
         <div class="ofert__content">
             <div class="ofert__item">
                 <div class="ofert__item-img">
-                    <img src="imagenes/f1.webp" alt="" loading="lazy">
+                    <img src="imagenes/silene.webp" alt="Silene" loading="lazy">
                 </div>
                 <div class="ofert__item-txt">
                     <h3>Silene</h3>
@@ -53,7 +53,7 @@
     
             <div class="ofert__item">
                 <div class="ofert__item-img">
-                    <img src="imagenes/f2.webp" alt="" loading="lazy">
+                    <img src="imagenes/leucanthenum-maximun.webp" alt="Leucanthenum maximun" loading="lazy">
                 </div>
                 <div class="ofert__item-txt">
                     <h3>Leucanthenum maximun</h3>
@@ -63,7 +63,7 @@
     
             <div class="ofert__item">
                 <div class="ofert__item-img">
-                    <img src="imagenes/f3.png" alt="" loading="lazy">
+                    <img src="imagenes/f3.png" alt="..." loading="lazy">
                 </div>
                 <div class="ofert__item-txt">
                     <h3>Producto X</h3>
@@ -71,95 +71,95 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="btn-2 ver-mas" >Ver mas ofertas</a>
+        <a href="#" class="btn-2 button__ver-mas" >Ver mas ofertas</a>
     </section>
 
     <!--- PRODUCTOS --->
-    <main class="prducts container" id="lista-1">
-        <div class="ofert__pre-oferts">
-            <h2 class="pre-oferts-txt">Productos<br>Destacados</h2>
+    <main class="products container" id="productos">
+        <div class="ofert__pre-product">
+            <h2 class="ofert__pre-product-txt">Productos<br>Destacados</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi cupiditate hic non atque impedit vitae maiores.</p>
         </div>
-        <div class="product-content">
-            <div class="product">
-                <img src="imagenes/1.png" alt="" loading="lazy">
-                <div class="product-txt">
+        <div class="product__content">
+            <div class="product__item">
+                <img src="imagenes/Daucus-Carota-Purple-Kisses.png" alt="Daucus Carota Purple Kisses" class="product__item-img" loading="lazy">
+                <div class="product__item-txt">
                     <h3>Daucus Carota Purple Kisses</h3>
                     <p>X</p>
-                    <p class="pecio">$$$</p>
+                    <p class="product__item-precio">$$$</p>
                     <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
                 </div>
             </div>
 
-            <div class="product">
-                <img src="imagenes/2.png" alt="" loading="lazy">
-                <div class="product-txt">
+            <div class="product__item">
+                <img src="imagenes/Cosmos-sulphureus.png" alt="Cosmos sulphureus" class="product__item-img" loading="lazy">
+                <div class="product__item-txt">
                     <h3>Cosmos sulphureus</h3>
                     <p>X</p>
-                    <p class="pecio">$$$</p>
+                    <p class="product__item-precio">$$$</p>
                     <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
                 </div>
             </div>
 
-            <div class="product">
-                <img src="imagenes/3.png" alt="" loading="lazy">
-                <div class="product-txt">
+            <div class="product__item">
+                <img src="imagenes/Ammobium-alatum.png" alt="Ammobium alatum" class="product__item-img" loading="lazy">
+                <div class="product__item-txt">
                     <h3>Ammobium alatum</h3>
                     <p>X</p>
-                    <p class="pecio">$$$</p>
+                    <p class="product__item-precio">$$$</p>
                     <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
                 </div>
             </div>
 
-            <div class="product">
-                <img src="imagenes/4.png" alt="" loading="lazy">
-                <div class="product-txt">
+            <div class="product__item">
+                <img src="imagenes/Lino-azul.png" alt="Lino azul" class="product__item-img" loading="lazy">
+                <div class="product__item-txt">
                     <h3>Lino azul</h3>
                     <p>X</p>
-                    <p class="pecio">$$$</p>
+                    <p class="product__item-precio">$$$</p>
                     <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
                 </div>
             </div>
 
-            <div class="product">
-                <img src="imagenes/5.png" alt="" loading="lazy">
-                <div class="product-txt">
+            <div class="product__item">
+                <img src="imagenes/Centaurea-Black-ball.png" alt="Centaurea Black ball" class="product__item-img" loading="lazy">
+                <div class="product__item-txt">
                     <h3>Centaurea Black ball</h3>
                     <p>X</p>
-                    <p class="pecio">$$$</p>
+                    <p class="product__item-precio">$$$</p>
                     <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al carrito</a>
                 </div>
             </div>
 
-            <div class="product">
-                <img src="imagenes/6.png" alt="" loading="lazy">
-                <div class="product-txt">
+            <div class="product__item">
+                <img src="imagenes/Arvejillas-de-olor.png" alt="Arvejillas de olor" class="product__item-img" loading="lazy">
+                <div class="product__item-txt">
                     <h3>Arvejillas de olor</h3>
                     <p>X</p>
-                    <p class="pecio">$$$</p>
-                    <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar al carrito</a>
+                    <p class="product__item-precio">$$$</p>
+                    <a href="#" class="button__agregar-carrito" data-id="6">Agregar al carrito</a>
                 </div>
             </div>
-            <a href="#" class="btn-2 ver-mas" >Ver todos los Productos</a>
+            <a href="#" class="btn-2 button__ver-mas" >Ver todos los Productos</a>
         </div>
     </main>
 
     <!--- x --->
     <section class="blog container">
         <div class="blog-1">
-            <img src="imagenes/b1.png" alt="" loading="lazy">
+            <img src="imagenes/x1.png" alt="..." loading="lazy">
             <h3>Blog 1</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat facilis nihil dolor, libero error minima impedit voluptatibus quod qui vel vero quos aperiam veritatis unde inventore, exercitationem quibusdam reiciendis magnam.</p>
         </div>
 
         <div class="blog-1">
-            <img src="imagenes/b2.png" alt="" loading="lazy">
+            <img src="imagenes/x1.png" alt="..." loading="lazy">
             <h3>Blog 2</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat facilis nihil dolor, libero error minima impedit voluptatibus quod qui vel vero quos aperiam veritatis unde inventore, exercitationem quibusdam reiciendis magnam.</p>
         </div>
 
         <div class="blog-1">
-            <img src="imagenes/b3.png" alt="" loading="lazy">
+            <img src="imagenes/x1.png" alt="..." loading="lazy">
             <h3>Blog 3</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat facilis nihil dolor, libero error minima impedit voluptatibus quod qui vel vero quos aperiam veritatis unde inventore, exercitationem quibusdam reiciendis magnam.</p>
         </div>
@@ -167,51 +167,40 @@
 
     <!--- FOOTER --->
     <footer class="footer">
-        <div class="footer-content container">
-            <div class="link">
-                <h3>Lorem</h3>
+        <div class="footer__content">
+            <div class="footer__item">
+                <h3>Explorar</h3>
                 <ul>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#ofertas">Ofertas</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
                 </ul>
             </div>
-        </div>
-
-        <div class="footer-content container">
-            <div class="link">
-                <h3>Lorem</h3>
+            <div class="footer__item">
+                <h3>Compañia</h3>
                 <ul>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="https://maps.app.goo.gl/DwijN9xfLJbjnKi59" target="_blank">Ubicacion</a></li>
                 </ul>
             </div>
-        </div>
-
-        <div class="footer-content container">
-            <div class="link">
-                <h3>Lorem</h3>
+            <div class="footer__item">
+                <h3>Redes</h3>
                 <ul>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61573788201686&rdid=7NNB3tb2wpa1ECCp&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15uqb3u12a%2F" target="_blank"><i class="bi bi-facebook"></i> Facebook</a></li>
+                    <li><a href="https://www.instagram.com/comoaunaflor" target="_blank"><i class="bi bi-instagram"></i> Instagram</a></li>
+                    <li><a href="https://www.tiktok.com/@comoaunaflor?_t=zm-90cicyoq7yw&_r=1" target="_blank"><i class="bi bi-tiktok"></i> Tik Tok</a></li>
+                    <li><a href="https://api.whatsapp.com/send/?phone=%2B5492475424258&text&type=phone_number&app_absent=0" target="_blank"><i class="bi bi-whatsapp"></i> Whatsapp</a></li>
                 </ul>
             </div>
-        </div>
-
-        <div class="footer-content container">
-            <div class="link">
-                <h3>Lorem</h3>
-                <ul>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                </ul>
+            <div class="footer__item">
+                <img src="imagenes/logo.png" alt="Logo" class="footer__img">
+                <h4>Direccion</h4>
+                <p>Colón 80, Rojas Bs As</p>
+                <h4>Telefono</h4>
+                <a href="tel:+542475424258" class="footer-tel">2475424258</a>
+                <h4>Email</h4>
+                <a href="mailto:Comoaunaflor@gmail.com">Comoaunaflor@gmail.com</a>
             </div>
         </div>
     </footer>
