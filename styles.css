@@ -37,7 +37,7 @@ ul {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  background-image: url(imagenes/rightT.png);
+  background-image: url(imagenes/T.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
