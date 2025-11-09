@@ -230,7 +230,6 @@ ul {
 
 .ofert__item-img {
   flex: 1;
-  margin-right: 15px;
 }
 
 .ofert__item-img img {
@@ -245,7 +244,7 @@ ul {
 }
 
 .ofert__item-txt {
-  flex: 1;
+  flex: 1 1;
   text-align: center;
 }
 
@@ -263,6 +262,12 @@ ul {
   min-height: 180px;
   max-width: 250px;
   max-height: 180px;
+}
+}
+
+@container ofert (max-width:450px){
+    .ofert__item-txt h3{
+    font-size: 17px
 }
 }
 /* ----------- OFERTS END ---------- */
