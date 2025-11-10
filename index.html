@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Como a una Flor</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagenes/x1.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -13,7 +14,7 @@
 <body>
     <!--- HEADER --->
     <header class="header" id="inicio">
-        <div class="header__menu container">
+        <div class="header__menu holder">
             <a href="#" class="header__menu-logo"><img src="imagenes/logo.png" alt="Logo de la marca" loading="lazy"></a>
             <a href="#" class="header__menu-carrito"><i class="bi bi-cart"></i></a>
             <input type="checkbox" id="menu"/>
@@ -22,10 +23,10 @@
             </label>
             <nav class="header__nav">
                 <ul class="header__nav-list">
-                    <li class="header__nav-item"><a href="#inicio">Inicio</a></li>
+                    <li class="header__nav-item header__nav-item-activo"><a href="#inicio">Inicio</a></li>
                     <li class="header__nav-item"><a href="#ofertas">Ofertas</a></li>
                     <li class="header__nav-item"><a href="#productos">Productos</a></li>
-                    <li class="header__nav-item"><a href="#">Contacto</a></li>
+                    <li class="header__nav-item"><a href="contacto/index.html">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -35,7 +36,7 @@
     </header>
 
     <!--- OFERTAS --->
-    <section class="ofert container" id="ofertas">
+    <section class="ofert holder" id="ofertas">
         <div class="ofert__pre-oferts">
             <h2 class="ofert__pre-oferts-txt">Ofertas<br>Destacadas</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi cupiditate hic non atque impedit vitae maiores.</p>
@@ -75,7 +76,7 @@
     </section>
 
     <!--- PRODUCTOS --->
-    <main class="products container" id="productos">
+    <main class="products holder" id="productos">
         <div class="ofert__pre-product">
             <h2 class="ofert__pre-product-txt">Productos<br>Destacados</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi cupiditate hic non atque impedit vitae maiores.</p>
@@ -143,27 +144,6 @@
             <a href="#" class="btn-2 button__ver-mas" >Ver todos los Productos</a>
         </div>
     </main>
-
-    <!--- x --->
-    <section class="blog container">
-        <div class="blog-1">
-            <img src="imagenes/x1.png" alt="..." loading="lazy">
-            <h3>Blog 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat facilis nihil dolor, libero error minima impedit voluptatibus quod qui vel vero quos aperiam veritatis unde inventore, exercitationem quibusdam reiciendis magnam.</p>
-        </div>
-
-        <div class="blog-1">
-            <img src="imagenes/x1.png" alt="..." loading="lazy">
-            <h3>Blog 2</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat facilis nihil dolor, libero error minima impedit voluptatibus quod qui vel vero quos aperiam veritatis unde inventore, exercitationem quibusdam reiciendis magnam.</p>
-        </div>
-
-        <div class="blog-1">
-            <img src="imagenes/x1.png" alt="..." loading="lazy">
-            <h3>Blog 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat facilis nihil dolor, libero error minima impedit voluptatibus quod qui vel vero quos aperiam veritatis unde inventore, exercitationem quibusdam reiciendis magnam.</p>
-        </div>
-    </section>
 
     <!--- FOOTER --->
     <footer class="footer">
